@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Hace que el contenedor principal ocupe toda la altura de la pantalla */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* El contenedor que envuelve todo el contenido */
+        .content {
+            min-height: 100vh;
+            /* Hace que ocupe el 100% de la altura */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Hace que el footer quede pegado abajo */
+        footer {
+            margin-top: auto;
+        }
+
+        /* Ajustes para el control del carrusel */
+        .custom-carousel-control {
+            width: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control-prev {
+            left: 10px;
+        }
+
+        .carousel-control-next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <img src="imgs/GRENLUS-removebg-preview.png" class="img-fluid" style="max-width: 50px; height: auto;">
+                <img src="imgs/GRENLUS__1_-removebg-preview.png" class="img-fluid" style="max-width: 100px; height: auto;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item h5">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item h5">
+                            <a class="nav-link text-light" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown h5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Nosotros
+                            </a>
+                            <ul class="dropdown-menu text-light">
+                                <li><a class="dropdown-item" href="nosotros.html">Informacion</a></li>
+                                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Columna del carrusel -->
+                <div class="col-7 position-relative mt-3 mb-5" style="height: 500px;">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <!-- Primera imagen -->
+                            <div class="carousel-item active" style="height: 500px;">
+                                <img src="imgs/STICKER.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <!-- Segunda imagen -->
+                            <div class="carousel-item" style="height: 500px;">
+                                <img src="imgs/00000000RUB-00068529300000000RUB-000642783ROLL-Up2.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <!-- Tercera imagen -->
+                            <div class="carousel-item" style="height: 500px;">
+                                <img src="imgs/668a22cc-189c-4746-8c2f-db0e4b151267.jpeg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <!-- Botón anterior -->
+                        <button class="carousel-control-prev custom-carousel-control bg-dark" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <!-- Botón siguiente -->
+                        <button class="carousel-control-next custom-carousel-control bg-dark" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-5 mt-3 text-center">
+                    <h5>NOMBRE DEL PRODUCTO</h5>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate quae dicta, nobis excepturi temporibus unde inventore similique veritatis tenetur
+                        quisquam officia expedita quod tempora impedit dolores molestias eius totam mollitia?
+
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="imgs/gorradiseño (2).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Gorra algodon</h5>
+                                <p class="card-text">Gorra de algodon con tu diseño.</p>
+                                <a href="producto2.html" class="btn btn-primary">Ir al producto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="imgs/plato.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Plato</h5>
+                                <p class="card-text">Personaliza tu plato con tu diseño.</p>
+                                <a href="producto4.html" class="btn btn-primary">Ir al producto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="imgs/cuelloredondo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Buzo cuello redondo</h5>
+                                <p class="card-text">Buzo de cuello redondo personalizable.</p>
+                                <a href="producto3.html" class="btn btn-primary">Ir al producto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .carousel-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                /* Asegura que la imagen se ajuste al contenedor sin recortarse */
+                object-position: center;
+                /* Centra la imagen dentro del contenedor */
+            }
+        </style>
+
+
+        <footer>
+            <div class="container-fluid text-center bg-dark p-5 mt-5">
+                <div class="row row-cols-1 row-cols-sm-4 row-cols-md-3">
+                    <div class="col text-light mb-4 mb-md-0">
+                        <h5>Sobre Nosotros</h5>
+                        <p>Ofrecemos repuestos para impresión gráfica en Buenos Aires, Argentina. Estamos comprometidos
+                            con brindar productos de calidad para satisfacer las necesidades de nuestros clientes.</p>
+                    </div>
+                    <div class="col text-light mb-4 mb-md-0">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="mailto:info@grenlus.com" class="text-light">info@grenlus.com</a></li>
+                            <li><a href="tel:+54123456789" class="text-light">+54 123 456 789</a></li>
+                        </ul>
+                    </div>
+                    <div class="col text-light mb-4 mb-md-0">
+                        <h5>Redes Sociales</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light"><i class="bi bi-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.instagram.com/grenlus.impresiones/" class="text-light"><i
+                                        class="bi bi-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        </boIr al producto
